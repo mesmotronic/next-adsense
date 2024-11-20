@@ -1,0 +1,55 @@
+{
+  "name": "@mesmotronic/next-adsense",
+  "author": "Neil Rackett",
+  "license": "BSD-3-Clause",
+  "version": "1.0.0",
+  "description": "Google AdSense components for Next.js",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "type": "module",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesmotronic/next-adsense.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "google",
+    "adsense"
+  ],
+  "bugs": {
+    "url": "https://github.com/mesmotronic/next-adsense/issues"
+  },
+  "homepage": "https://github.com/mesmotronic/next-adsense#readme",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b ./tsconfig.lib.json && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/node": "^22.9.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.11.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.11.0",
+    "vite": "^5.4.10",
+    "vite-plugin-dts": "^4.3.0"
+  }
+}
