@@ -30,7 +30,8 @@
     "dev": "vite",
     "build": "tsc -b ./tsconfig.lib.json && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublish": "npm run build"
   },
   "peerDependencies": {
     "next": "^15.0.3",
