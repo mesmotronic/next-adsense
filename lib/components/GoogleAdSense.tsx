@@ -3,9 +3,15 @@ import { FC } from "react";
 
 interface IProps {
   client: string;
+  /**
+   * Restricts anchor ads to the bottom of the page. Note that setting this
+   * enables anchor ads even if they're turned off in your Auto ads settings.
+   * @see https://support.google.com/adsense/answer/7478225
+   */
+  overlays?: "bottom" | "collapsed-bottom";
 };
 
-const GoogleAdSense: FC<IProps> = ({ client }) => {
+const GoogleAdSense: FC<IProps> = ({ client, overlays }) => {
 
   // if (process.env.NODE_ENV !== "production") {
   //   return null;
@@ -17,7 +23,7 @@ const GoogleAdSense: FC<IProps> = ({ client }) => {
       async
       crossOrigin="anonymous"
       strategy="lazyOnload"
-      data-overlays="bottom"
+      data-overlays={overlays}
     />
   );
 

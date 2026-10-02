@@ -20,6 +20,14 @@ import { GoogleAdSense } from "@mesmotronic/next-adsense";
 <GoogleAdSense client="ca-pub-XXXXXXXXXXXXXXXX" />
 ```
 
+To only show anchor ads at the bottom of the page, set `overlays` to `"bottom"`, or `"collapsed-bottom"`
+to also disable collapsible anchor ads. Note that this enables anchor ads even if you've turned them off
+in your Auto ads settings ([more info](https://support.google.com/adsense/answer/7478225)):
+
+```jsx
+<GoogleAdSense client="ca-pub-XXXXXXXXXXXXXXXX" overlays="bottom" />
+```
+
 On your pages, you can then add a `GoogleAdUnit` component to wrap the `<ins>` elemenent Google AdSense
 creates for you in its code generator, for example:
 
